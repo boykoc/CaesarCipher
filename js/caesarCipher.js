@@ -24,9 +24,9 @@ angular.module('caesarCipherApp', [])
   						$scope.tempString += String.fromCharCode(letter.charCodeAt()+i - 26);
   					} else {
   						$scope.tempString += String.fromCharCode(letter.charCodeAt()+i);
-  					}
+  					} 
   				} else {				
-  					$scope.tempString += String.fromCharCode(letter.charCodeAt()+i);
+  					$scope.tempString += letter;
   				}
   			};
   			// Push new string to array

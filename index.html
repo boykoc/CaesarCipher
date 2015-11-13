@@ -16,7 +16,7 @@
       </form>
       <hr>
       <h2>Encode/Decode options for {{yourString}}</h2>
-      <ul ng-repeat="value in results">
+      <ul ng-repeat="value in results track by $index">
         <li>{{value}}</li>
       </ul>
     </div>   

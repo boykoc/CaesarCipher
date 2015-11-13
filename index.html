@@ -4,17 +4,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
   </head>
   <body>
-    <div>
+    <div ng-controller="CaesarCipherController">
       <h1>Caesar Cipher</h1>
       <p>Basic Caesar cipher encoder/decoder.</p>
       <p>Enter a string and the program will print out all options for encoding the string based on the 26 letters of the English alphabet. If the string is already encoded, it will decode the string into all 26 possible variations.</p>
-      <form>
+      <form ng-submit="submit()">
         <label>String:</label>
         <input type="text" ng-model="yourString" placeholder="Enter a sentance to encode/decode">
         <input type="submit" id="submit" value="Submit">
       </form>
       <hr>
       <h2>Encode/Decode options for {{yourString}}</h2>
+      <ul ng-repeat="value in results">
+        <li>{{value}}</li>
+      </ul>
     </div>   
   </body>
 </html>

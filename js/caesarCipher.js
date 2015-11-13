@@ -3,7 +3,7 @@ angular.module('caesarCipherApp', [])
   	$scope.submit = function() {
   		$scope.results = []; // Array of all string options  		
   		// Loop over all letters of the alphabet/key options
-  		for (var i = 0; i < 25; i++) {
+  		for (var i = 0; i < 26; i++) {
   			$scope.tempString = "";
   			// Loop over each char of string 
   			for (var x = 0; x < $scope.yourString.length; x++) {
